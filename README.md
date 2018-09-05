@@ -21,6 +21,7 @@ serve the file `socket.io.js` found in the `dist` folder.
 <script>
   var socket = io('http://localhost');
   socket.on('connect', function(){});
+  // `event` is the name of the data channel the server sends
   socket.on('event', function(data){});
   socket.on('disconnect', function(){});
 </script>
